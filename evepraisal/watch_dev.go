@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/evepraisal/go-evepraisal"
+	"github.com/Ldogg123/simpraisal"
 	"github.com/radovskyb/watcher"
 )
 

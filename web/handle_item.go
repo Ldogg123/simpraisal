@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"strconv"
 
-	evepraisal "github.com/evepraisal/go-evepraisal"
-	"github.com/evepraisal/go-evepraisal/typedb"
+	evepraisal "github.com/Ldogg123/simpraisal"
+	"github.com/Ldogg123/simpraisal/typedb"
 	"github.com/go-zoo/bone"
 )
 

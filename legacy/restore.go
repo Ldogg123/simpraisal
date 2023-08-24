@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/evepraisal/go-evepraisal"
-	"github.com/evepraisal/go-evepraisal/typedb"
+	"github.com/Ldogg123/simpraisal"
+	"github.com/Ldogg123/simpraisal/typedb"
 )
 
 // RestoreLegacyFile will load a given restore file into the database
