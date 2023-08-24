@@ -12,7 +12,7 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/dustin/go-humanize"
-	"github.com/evepraisal/go-evepraisal"
+	"github.com/Ldogg123/simpraisal"
 	"github.com/pquerna/ffjson/ffjson"
 )
 
@@ -47,6 +47,7 @@ type namedThing struct {
 }
 
 var selectableMarkets = []namedThing{
+	{Name: "B17O-R", DisplayName: "B17O-R"},
 	{Name: "jita", DisplayName: "Jita"},
 	{Name: "perimeter", DisplayName: "Perimeter"},
 	{Name: "universe", DisplayName: "Universe"},
@@ -101,7 +102,7 @@ func (ctx *Context) renderWithRoot(r *http.Request, w http.ResponseWriter, templ
 		}
 	} else {
 		root.UI.Path = r.URL.Path
-		root.UI.SelectedMarket = ctx.getSessionValueWithDefault(r, "market", "jita")
+		root.UI.SelectedMarket = ctx.getSessionValueWithDefault(r, "market", "B17O-R")
 		root.UI.Markets = selectableMarkets
 		root.UI.SelectedVisibility = ctx.getSessionValueWithDefault(r, "visibility", "public")
 		root.UI.Visibilities = selectableVisibilities

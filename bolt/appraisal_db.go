@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/evepraisal/go-evepraisal"
+	"github.com/Ldogg123/simpraisal"
 	"github.com/golang/snappy"
 )
 

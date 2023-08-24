@@ -1,8 +1,8 @@
 package evepraisal
 
 import (
-	"github.com/evepraisal/go-evepraisal/parsers"
-	"github.com/evepraisal/go-evepraisal/typedb"
+	"github.com/Ldogg123/simpraisal/parsers"
+	"github.com/Ldogg123/simpraisal/typedb"
 )
 
 // NewContextMultiParser implements a parser that knows about what types exist. This makes it much more powerful
