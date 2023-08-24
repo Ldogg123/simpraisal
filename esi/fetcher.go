@@ -35,6 +35,11 @@ var SpecialRegions = []struct {
 	systems  []int64
 }{
 	{
+		//regionID: 10000058
+		name:	 "B17O-R",
+		stations: []int64{1036948142847},
+		systems: []int64{30004590},
+	}, {
 		// regionID: 10000002
 		name:    "jita",
 		systems: []int64{30000142},
@@ -122,7 +127,7 @@ func regionNames() []string {
 
 func (p *PriceFetcher) runOnce() {
 	log.Println("Fetch market data")
-	priceMap, err := p.FetchOrderData(p.client, p.baseURL, []int{10000002, 10000027, 10000030, 10000032, 10000042, 10000043})
+	priceMap, err := p.FetchOrderData(p.client, p.baseURL, []int{10000002, 10000027, 10000030, 10000032, 10000042, 10000043, 10000058})
 	if err != nil {
 		log.Println("ERROR: fetching market data: ", err)
 		return
