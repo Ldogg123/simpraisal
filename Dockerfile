@@ -1,8 +1,8 @@
-FROM golang:1.11-alpine
-LABEL maintainer="sudorandom <https://github.com/evepraisal/go-evepraisal>"
-WORKDIR $GOPATH/src/github.com/evepraisal/go-evepraisal
+FROM golang:1.20.7-alpine
+LABEL maintainer="Ldogg123 <https://github.com/Ldogg123/simpraisal>"
+WORKDIR $GOPATH/src/github.com/Ldogg123/simpraisal
 RUN apk --update add --no-cache --virtual build-dependencies git gcc musl-dev make bash && \
-    git clone https://github.com/evepraisal/go-evepraisal.git . && \
+    git clone https://github.com/Ldogg123/simpraisal.git . && \
     export GO111MODULE=on ENV=prod && \
     make setup && \
     make build && \
