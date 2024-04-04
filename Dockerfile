@@ -1,4 +1,4 @@
-FROM golang:1.20.7-alpine
+FROM golang:1.21.8-alpine
 LABEL maintainer="Ldogg123 <https://github.com/Ldogg123/simpraisal>"
 WORKDIR $GOPATH/src/github.com/Ldogg123/simpraisal
 RUN apk --update add --no-cache --virtual build-dependencies git gcc musl-dev make bash && \
